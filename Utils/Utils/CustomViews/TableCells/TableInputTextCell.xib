@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontAwesome.otf">
+            <string>FontAwesome5FreeSolid</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" reuseIdentifier="tableInputTextCell" rowHeight="46" id="KGk-i7-Jjw" customClass="TableInputTextCell" customModule="Utils">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWi-6J-o6l">
+                        <rect key="frame" x="0.0" y="0.0" width="311" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GV-t1-8et">
+                                <rect key="frame" x="4" y="4" width="50" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="KB6-mp-Xsa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="19" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1ee-oq-C9K" customClass="LRTextField">
+                                <rect key="frame" x="58" y="10" width="249" height="26"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="RXV-ef-b08"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableAnimation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelHeight">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderActiveColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderInactiveColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="Bi1-FT-zPZ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3GV-t1-8et" firstAttribute="leading" secondItem="sWi-6J-o6l" secondAttribute="leading" constant="4" id="6UQ-pc-4my"/>
+                            <constraint firstAttribute="bottom" secondItem="1ee-oq-C9K" secondAttribute="bottom" constant="10" id="Hci-wJ-isE"/>
+                            <constraint firstItem="1ee-oq-C9K" firstAttribute="leading" secondItem="3GV-t1-8et" secondAttribute="trailing" constant="4" id="mO0-7F-aAL"/>
+                            <constraint firstAttribute="bottom" secondItem="3GV-t1-8et" secondAttribute="bottom" constant="4" id="pma-5m-gl5"/>
+                            <constraint firstAttribute="trailing" secondItem="1ee-oq-C9K" secondAttribute="trailing" constant="4" id="siG-fy-I9K"/>
+                            <constraint firstItem="3GV-t1-8et" firstAttribute="top" secondItem="sWi-6J-o6l" secondAttribute="top" constant="4" id="wO4-2x-riT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sWi-6J-o6l" secondAttribute="bottom" id="4AR-Yp-xbn"/>
+                    <constraint firstItem="sWi-6J-o6l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="F3C-5h-KEW"/>
+                    <constraint firstItem="sWi-6J-o6l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Nhx-F5-IIc"/>
+                    <constraint firstAttribute="trailing" secondItem="sWi-6J-o6l" secondAttribute="trailing" id="hKm-9h-Fbd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblIcon" destination="3GV-t1-8et" id="R1a-u3-7lk"/>
+                <outlet property="txtFromBottom" destination="Hci-wJ-isE" id="Tqd-nW-hq8"/>
+                <outlet property="txtInput" destination="1ee-oq-C9K" id="aUg-me-vIT"/>
+            </connections>
+            <point key="canvasLocation" x="28" y="54.872563718140931"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="1ee-oq-C9K">
+            <size key="intrinsicContentSize" width="54" height="24"/>
+        </designable>
+    </designables>
+</document>

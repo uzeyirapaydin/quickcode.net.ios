@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontAwesome.otf">
+            <string>FontAwesome5FreeSolid</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" reuseIdentifier="tableViewRowBasicItem" rowHeight="56" id="KGk-i7-Jjw" customClass="TableViewRowBasicItem" customModule="Utils">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2o-Aa-621">
+                        <rect key="frame" x="4" y="4" width="40" height="47.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="bH8-AF-pLK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz2-ja-gIW">
+                        <rect key="frame" x="50" y="4" width="266" height="47.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bz2-ja-gIW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="0Wk-nf-QeB"/>
+                    <constraint firstAttribute="bottom" secondItem="bz2-ja-gIW" secondAttribute="bottom" constant="4" id="DP7-5S-9fg"/>
+                    <constraint firstAttribute="trailing" secondItem="bz2-ja-gIW" secondAttribute="trailing" constant="4" id="V9A-45-idA"/>
+                    <constraint firstItem="bz2-ja-gIW" firstAttribute="leading" secondItem="Z2o-Aa-621" secondAttribute="trailing" constant="6" id="Y8m-Mn-7hG"/>
+                    <constraint firstItem="Z2o-Aa-621" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="lna-g2-2ek"/>
+                    <constraint firstAttribute="bottom" secondItem="Z2o-Aa-621" secondAttribute="bottom" constant="4" id="olm-A9-duS"/>
+                    <constraint firstItem="Z2o-Aa-621" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="tTs-zG-YSa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblIcon" destination="Z2o-Aa-621" id="5DF-v6-TR1"/>
+                <outlet property="lblLabel" destination="bz2-ja-gIW" id="Iqr-Eq-ZlH"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="60"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="tableTwoButtonViewCell" rowHeight="83" id="KGk-i7-Jjw" customClass="TableTwoButtonViewCell" customModule="Utils">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EV5-6o-7Kp">
+                        <rect key="frame" x="4" y="4" width="360" height="75"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LPD-JA-IT1">
+                                <rect key="frame" x="4" y="10" width="352" height="61"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceh-1F-B1C" customClass="CustomPressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="61"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                        <state key="normal" title="No">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.75294117650000003" green="0.29803921570000003" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowHeight">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSD-Sp-18r" customClass="CustomPressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="181" y="0.0" width="171" height="61"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                        <state key="normal" title="Yes">
+                                            <color key="titleShadowColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowHeight">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LPD-JA-IT1" firstAttribute="leading" secondItem="EV5-6o-7Kp" secondAttribute="leading" constant="4" id="Jfp-TN-Mtg"/>
+                            <constraint firstAttribute="trailing" secondItem="LPD-JA-IT1" secondAttribute="trailing" constant="4" id="Usn-ZD-IFn"/>
+                            <constraint firstAttribute="bottom" secondItem="LPD-JA-IT1" secondAttribute="bottom" constant="4" id="WU6-Wv-RXR"/>
+                            <constraint firstItem="LPD-JA-IT1" firstAttribute="top" secondItem="EV5-6o-7Kp" secondAttribute="top" constant="10" id="gGJ-zT-chf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EV5-6o-7Kp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="G1c-1M-khh"/>
+                    <constraint firstItem="EV5-6o-7Kp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="Lbq-bJ-eLS"/>
+                    <constraint firstAttribute="bottom" secondItem="EV5-6o-7Kp" secondAttribute="bottom" constant="4" id="hlG-T2-8G2"/>
+                    <constraint firstAttribute="trailing" secondItem="EV5-6o-7Kp" secondAttribute="trailing" constant="4" id="uGx-UM-Rmb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnNo" destination="OSD-Sp-18r" id="jfb-BF-bW5"/>
+                <outlet property="btnYes" destination="ceh-1F-B1C" id="ccw-uO-6d8"/>
+            </connections>
+            <point key="canvasLocation" x="58" y="73.5"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="OSD-Sp-18r">
+            <size key="intrinsicContentSize" width="32" height="24"/>
+        </designable>
+        <designable name="ceh-1F-B1C">
+            <size key="intrinsicContentSize" width="26" height="24"/>
+        </designable>
+    </designables>
+</document>

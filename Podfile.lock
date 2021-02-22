@@ -1,0 +1,86 @@
+PODS:
+  - ALCameraViewController (3.1)
+  - FontAwesome.swift (1.9.1)
+  - FSCalendar (2.8.2)
+  - GoogleMaps (4.1.0):
+    - GoogleMaps/Maps (= 4.1.0)
+  - GoogleMaps/Base (4.1.0)
+  - GoogleMaps/Maps (4.1.0):
+    - GoogleMaps/Base
+  - GooglePlaces (4.1.0):
+    - GoogleMaps/Base (= 4.1.0)
+  - KMPlaceholderTextView (1.4.0)
+  - LRTextField (1.1.3)
+  - MaterialTextField (1.0.1)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - PinCodeTextField (0.1.0)
+  - SCLAlertView (0.8)
+  - SwiftLocation (5.1.0):
+    - SwiftLocation/BeaconBroadcaster (= 5.1.0)
+    - SwiftLocation/Core (= 5.1.0)
+  - SwiftLocation/BeaconBroadcaster (5.1.0):
+    - SwiftLocation/Core
+  - SwiftLocation/Core (5.1.0)
+  - SwiftMessages (9.0.0):
+    - SwiftMessages/App (= 9.0.0)
+  - SwiftMessages/App (9.0.0)
+  - SwiftyButton (0.8.2)
+  - "UITextField+Shake (1.2.1)"
+
+DEPENDENCIES:
+  - ALCameraViewController
+  - FontAwesome.swift
+  - FSCalendar
+  - GoogleMaps
+  - GooglePlaces
+  - KMPlaceholderTextView
+  - LRTextField
+  - MaterialTextField
+  - NVActivityIndicatorView
+  - PinCodeTextField
+  - SCLAlertView
+  - SwiftLocation
+  - SwiftMessages
+  - SwiftyButton
+  - "UITextField+Shake (~> 1.2)"
+
+SPEC REPOS:
+  trunk:
+    - ALCameraViewController
+    - FontAwesome.swift
+    - FSCalendar
+    - GoogleMaps
+    - GooglePlaces
+    - KMPlaceholderTextView
+    - LRTextField
+    - MaterialTextField
+    - NVActivityIndicatorView
+    - PinCodeTextField
+    - SCLAlertView
+    - SwiftLocation
+    - SwiftMessages
+    - SwiftyButton
+    - "UITextField+Shake"
+
+SPEC CHECKSUMS:
+  ALCameraViewController: 144dea45fd749a623aafd8cb7b10cea88499fcc3
+  FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  GoogleMaps: 008e2c80e38605b56b560e8deb73d4194ff30bef
+  GooglePlaces: a058b776259c13e1323c9ff135549cb1b13ad8e7
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  LRTextField: 340e3ad5dad7e9dc058252fc1257836b98517248
+  MaterialTextField: f1a0786588e4d3610cb9bb62d2adbe9777cebbf9
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PinCodeTextField: a3c39be58bde3ed1d6888d0fb1d88b0a4a2277cc
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SwiftLocation: 83e0ea75a1969cee3a1197e2b7095603fc23fde5
+  SwiftMessages: 55274ca3a239062398603008ed81924cfd1fe798
+  SwiftyButton: 5b0ef314e9cf61cf8a83e456ddd1ea1f53f30598
+  "UITextField+Shake": 298ac5a0f239d731bdab999b19b628c956ca0ac3
+
+PODFILE CHECKSUM: 28da5a56ff2475cba62844cd30328d5596f1fa4c
+
+COCOAPODS: 1.9.3
