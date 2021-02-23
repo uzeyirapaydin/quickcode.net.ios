@@ -25,11 +25,12 @@ class ViewController: UITableViewController , NVActivityIndicatorViewable{
     var tableViewDataSource : TableViewRowGenerator? = nil
     func RegisterTableViewCells(){
         var generatedTableViewRowData = [(key : String , value : [ String : [String:String]])]()
-        generatedTableViewRowData.insert((key: "Header", value: ["TableViewRowHeaderItem" : ["TitleTop" : "QuickCode.Net", "TitleDetail" : "Sign Up"]]), at: 0)
-        generatedTableViewRowData.insert((key: "userPhoto", value: ["TableViewRowUserPhotoItem" : ["IsOptional" : "false"]]), at: 1)
-        generatedTableViewRowData.insert((key: "name", value: ["TableViewRowTextFieldItem" : ["PlaceholderText" : "Name", "IconValue" : ""]]), at: 2)
-        generatedTableViewRowData.insert((key: "surname", value: ["TableViewRowTextFieldItem" : ["PlaceholderText" : "Surname", "IconValue" : ""]]), at: 3)
-        generatedTableViewRowData.insert((key: "phone", value: ["TableViewRowTextFieldItem" : ["PlaceholderText" : "Phone Number", "IconValue" : "" , "Type" : "TextFieldPhone"]]), at: 4)
+        generatedTableViewRowData.append((key: "Header", value: ["TableViewRowHeaderItem" : ["TitleTop" : "QuickCode.Net", "TitleDetail" : "Sign Up"]]))
+        generatedTableViewRowData.append((key: "userPhoto", value: ["TableViewRowUserPhotoItem" : ["IsOptional" : "false"]]))
+        generatedTableViewRowData.append((key: "name", value: ["TableViewRowTextFieldItem" : ["PlaceholderText" : "Name", "IconValue" : ""]]))
+        generatedTableViewRowData.append((key: "surname", value: ["TableViewRowTextFieldItem" : ["PlaceholderText" : "Surname", "IconValue" : ""]]))
+        generatedTableViewRowData.append((key: "phone", value: ["TableViewRowTextFieldItem" : ["PlaceholderText" : "Phone Number", "IconValue" : "" , "Type" : "TextFieldPhone"]]))
+        generatedTableViewRowData.append((key: "buttons", value: ["TableViewTwoButtonItem" : ["ButtonYesTitle" : "Sign Up", "ButtonNoTitle" : "Cancel" ]]))
         
         for (rowIndex, rowData) in generatedTableViewRowData.enumerated(){
             
