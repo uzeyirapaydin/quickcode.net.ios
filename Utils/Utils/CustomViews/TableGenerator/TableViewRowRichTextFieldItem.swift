@@ -19,25 +19,26 @@ public class TableViewRowRichTextFieldItem : TableViewRowNibItem {
     var isReadonly : Bool = false
     
     
-   public  required convenience init( placeholderText: String, iconValue :  String, defaultValue : String = "", isReadonly: Bool = false) {
+//   public  required convenience init( placeholderText: String, iconValue :  String, defaultValue : String = "", isReadonly: Bool = false) {
+//        self.init(nibName: "TableInputRichTextCell", reuseIdentifier: "tableInputRichTextCell")
+//        self.placeholderText=placeholderText
+//        self.iconValue = iconValue
+//        self.defaultValue=defaultValue
+//        self.isReadonly=isReadonly
+//        self.rowHeight=120
+//    }
+    
+    public required convenience init(parameters: [String: String] ) {
         self.init(nibName: "TableInputRichTextCell", reuseIdentifier: "tableInputRichTextCell")
-        self.placeholderText=placeholderText
-        self.iconValue = iconValue
-        self.defaultValue=defaultValue
-        self.isReadonly=isReadonly
-        self.rowHeight=120
+        initializeRow(placeholderText: parameters["PlaceholderText"]!, iconValue: parameters["IconValue"]!, defaultValue: parameters["DefaultValue"]!, isReadonly: (parameters["IsReadonly"] ?? "").boolValue)
     }
     
-    
-    
-   public  required convenience init( placeholderText: String, iconValue :  String, type: TableViewRowTextFieldItemType, defaultValue : String = "", isReadonly: Bool = false) {
-        self.init(nibName: "TableInputRichTextCell", reuseIdentifier: "tableInputRichTextCell")
+    func initializeRow(placeholderText: String, iconValue :  String, defaultValue : String = "", isReadonly: Bool = false){
         self.placeholderText=placeholderText
         self.iconValue = iconValue
         self.defaultValue=defaultValue
         self.isReadonly=isReadonly
         self.rowHeight=120
-        
     }
     
     public func setInputType()  {

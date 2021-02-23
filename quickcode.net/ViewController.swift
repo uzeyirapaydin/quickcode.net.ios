@@ -24,27 +24,80 @@ class ViewController: UITableViewController , NVActivityIndicatorViewable{
     @IBOutlet weak var inputTableView: UITableView!
     var tableViewDataSource : TableViewRowGenerator? = nil
     func RegisterTableViewCells(){
-        tableViewDataSource?.addNewRow(key: "Header", value: TableViewRowHeaderItem(titleTop: "QuickCode.Net", titleDetail: "Sign Up"))
-        tableViewDataSource?.addNewRow(key: "userPhoto", value: TableViewRowUserPhotoItem(isOptional: false))
-        tableViewDataSource?.addNewRow(key: "name", value: TableViewRowTextFieldItem(placeholderText: "Name", iconValue: ""))
-        tableViewDataSource?.addNewRow(key: "surname", value: TableViewRowTextFieldItem(placeholderText: "Surname", iconValue: ""))
-        tableViewDataSource?.addNewRow(key: "phone", value: TableViewRowTextFieldItem(placeholderText: "Mobile Phone Number", iconValue: "", type: .TextFieldPhone))
-        tableViewDataSource?.addNewRow(key: "email", value: TableViewRowTextFieldItem(placeholderText: "Email", iconValue: "", type: .TextFieldEmail))
-        tableViewDataSource?.addNewRow(key: "password", value: TableViewRowTextFieldItem(placeholderText: "Password", iconValue: "", type: .TextFieldPassword))
-       
-        tableViewDataSource?.addNewRow(key: "state", value: TableViewRowStateItem())
-        tableViewDataSource?.addNewRow(key: "socialSecurityNo", value: TableViewRowTextFieldItem(placeholderText: "Social Security Number", iconValue: ""))
-        tableViewDataSource?.addNewRow(key: "licenseId", value: TableViewRowTextFieldItem(placeholderText: "Driver License Id", iconValue: ""))
+        var generatedTableViewRowData = [(key : String , value : [ String : [String:String]])]()
+        generatedTableViewRowData.insert((key: "Header", value: ["TableViewRowHeaderItem" : ["TitleTop" : "QuickCode.Net", "TitleDetail" : "Sign Up"]]), at: 0)
+        generatedTableViewRowData.insert((key: "userPhoto", value: ["TableViewRowUserPhotoItem" : ["IsOptional" : "false"]]), at: 1)
+        generatedTableViewRowData.insert((key: "name", value: ["TableViewRowTextFieldItem" : ["PlaceholderText" : "Name", "IconValue" : ""]]), at: 2)
+        generatedTableViewRowData.insert((key: "surname", value: ["TableViewRowTextFieldItem" : ["PlaceholderText" : "Surname", "IconValue" : ""]]), at: 3)
+        generatedTableViewRowData.insert((key: "phone", value: ["TableViewRowTextFieldItem" : ["PlaceholderText" : "Phone Number", "IconValue" : "" , "Type" : "TextFieldPhone"]]), at: 4)
         
-        tableViewDataSource?.addNewRow(key: "licenseImage", value: TableViewRowImageItem(imageName: "Driver License", popUpMessage: "Driver License Image", validationMessage: "Driver License Image"))
-        tableViewDataSource?.addNewRow(key: "vehicleInsuranceImage", value: TableViewRowImageItem(imageName: "Vehicle Insurance", popUpMessage: "Vehicle Insurance Image", validationMessage: "Vehicle Insurance Image"))
-        tableViewDataSource?.addNewRow(key: "vehicleRegistrationImage", value: TableViewRowImageItem(imageName: "Vehicle Registration", popUpMessage: "Vehicle Registration Image", validationMessage: "Vehicle Registration Image"))
-        tableViewDataSource?.addNewRow(key: "brandName", value: TableViewRowTextFieldItem(placeholderText: "Vehicle Brand Name", iconValue: ""))
-        tableViewDataSource?.addNewRow(key: "plateNumber", value: TableViewRowTextFieldItem(placeholderText: "Vehicle Plate Number", iconValue: ""))
-        tableViewDataSource?.addNewRow(key: "address", value: TableViewRowRichTextFieldItem(placeholderText: "Address", iconValue: ""))
-        tableViewDataSource?.addNewRow(key: "buttons", value: TableViewTwoButtonItem(buttonYesTitle: "Sign Up", buttonNoTitle: "Cancel"))
+        for (rowIndex, rowData) in generatedTableViewRowData.enumerated(){
+            
+            let rowKey = rowData.key
+            let rowDataValue = rowData.value
+            print(rowIndex)
+            print(rowKey)
+            for (rowType, rowParameters) in rowDataValue {
+                var newRowItem : AnyObject? = nil
+                
+                if rowType == "TableViewRowHeaderItem" {
+                    newRowItem = TableViewRowHeaderItem(parameters: rowParameters)
+                }
+                else if rowType == "TableViewRowTextFieldItem" {
+                    newRowItem = TableViewRowTextFieldItem(parameters: rowParameters)
+                }
+                else if rowType == "TableViewRowUserPhotoItem" {
+                    newRowItem = TableViewRowUserPhotoItem(parameters: rowParameters)
+                }
+                else if rowType == "TableViewRowStateItem" {
+                    newRowItem = TableViewRowStateItem(parameters: rowParameters)
+                }
+                else if rowType == "TableViewRowRichTextFieldItem" {
+                    newRowItem = TableViewRowRichTextFieldItem(parameters: rowParameters)
+                }
+                else if rowType == "TableViewTwoButtonItem" {
+                    newRowItem = TableViewTwoButtonItem(parameters: rowParameters)
+                }
+                else if rowType == "TableViewOneButtonItem" {
+                    newRowItem = TableViewOneButtonItem(parameters: rowParameters)
+                }
+                else if rowType == "TableViewRowImageItem" {
+                    newRowItem = TableViewRowImageItem(parameters: rowParameters)
+                }
+                else if rowType == "TableLinkItem" {
+                    newRowItem = TableLinkItem(parameters: rowParameters)
+                }
+                
+                if newRowItem != nil {
+                    tableViewDataSource?.addNewRow(key: rowKey, value: newRowItem!)
+                }
+                
+            }
+        }
+
         
-        tableViewDataSource?.addNewRow(key: "link", value: TableLinkItem(linkCaption: "By Signing up, you are agree to our", linkUrl : "https://www.uzeyirapaydin.com" , linkButtonCaption : "Terms & Conditions."))
+//        tableViewDataSource?.addNewRow(key: "Header", value: TableViewRowHeaderItem(parameters: generatedTableViewRowData["Header"]!))
+//        tableViewDataSource?.addNewRow(key: "Header", value: TableViewRowHeaderItem(titleTop: "QuickCode.Net", titleDetail: "Sign Up"))
+//        tableViewDataSource?.addNewRow(key: "userPhoto", value: TableViewRowUserPhotoItem(isOptional: false))
+//        tableViewDataSource?.addNewRow(key: "name", value: TableViewRowTextFieldItem(placeholderText: "Name", iconValue: ""))
+//        tableViewDataSource?.addNewRow(key: "surname", value: TableViewRowTextFieldItem(placeholderText: "Surname", iconValue: ""))
+//        tableViewDataSource?.addNewRow(key: "phone", value: TableViewRowTextFieldItem(placeholderText: "Mobile Phone Number", iconValue: "", type: .TextFieldPhone))
+//        tableViewDataSource?.addNewRow(key: "email", value: TableViewRowTextFieldItem(placeholderText: "Email", iconValue: "", type: .TextFieldEmail))
+//        tableViewDataSource?.addNewRow(key: "password", value: TableViewRowTextFieldItem(placeholderText: "Password", iconValue: "", type: .TextFieldPassword))
+//
+//        tableViewDataSource?.addNewRow(key: "state", value: TableViewRowStateItem())
+//        tableViewDataSource?.addNewRow(key: "socialSecurityNo", value: TableViewRowTextFieldItem(placeholderText: "Social Security Number", iconValue: ""))
+//        tableViewDataSource?.addNewRow(key: "licenseId", value: TableViewRowTextFieldItem(placeholderText: "Driver License Id", iconValue: ""))
+//
+//        tableViewDataSource?.addNewRow(key: "licenseImage", value: TableViewRowImageItem(imageName: "Driver License", popUpMessage: "Driver License Image", validationMessage: "Driver License Image"))
+//        tableViewDataSource?.addNewRow(key: "vehicleInsuranceImage", value: TableViewRowImageItem(imageName: "Vehicle Insurance", popUpMessage: "Vehicle Insurance Image", validationMessage: "Vehicle Insurance Image"))
+//        tableViewDataSource?.addNewRow(key: "vehicleRegistrationImage", value: TableViewRowImageItem(imageName: "Vehicle Registration", popUpMessage: "Vehicle Registration Image", validationMessage: "Vehicle Registration Image"))
+//        tableViewDataSource?.addNewRow(key: "brandName", value: TableViewRowTextFieldItem(placeholderText: "Vehicle Brand Name", iconValue: ""))
+//        tableViewDataSource?.addNewRow(key: "plateNumber", value: TableViewRowTextFieldItem(placeholderText: "Vehicle Plate Number", iconValue: ""))
+//        tableViewDataSource?.addNewRow(key: "address", value: TableViewRowRichTextFieldItem(placeholderText: "Address", iconValue: ""))
+//        tableViewDataSource?.addNewRow(key: "buttons", value: TableViewTwoButtonItem(buttonYesTitle: "Sign Up", buttonNoTitle: "Cancel"))
+//
+//        tableViewDataSource?.addNewRow(key: "link", value: TableLinkItem(linkCaption: "By Signing up, you are agree to our", linkUrl : "https://www.uzeyirapaydin.com" , linkButtonCaption : "Terms & Conditions."))
         
     }
     
@@ -138,3 +191,11 @@ class ViewController: UITableViewController , NVActivityIndicatorViewable{
     
 }
 
+
+public class TableViewRowGeneratorData {
+    public var key : String = ""
+    public var rowData = [[String :String]]()
+    init() {
+        rowData.append(["": ""])
+    }
+}

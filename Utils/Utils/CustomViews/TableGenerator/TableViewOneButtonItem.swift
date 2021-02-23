@@ -14,9 +14,18 @@ public class TableViewOneButtonItem : TableViewRowNibItem {
     
     public var cell : TableOneButtonViewCell? = nil
     
-    public required convenience init(buttonTitle: String) {
+//    public required convenience init(buttonTitle: String) {
+//        self.init(nibName: "TableOneButtonViewCell", reuseIdentifier: "tableOneButtonViewCell", rowHeight: 75)
+//        self.buttonTitle=buttonTitle
+//    }
+//
+
+    public required convenience init(parameters: [String: String]) {
         self.init(nibName: "TableOneButtonViewCell", reuseIdentifier: "tableOneButtonViewCell", rowHeight: 75)
+        initializeRow(buttonTitle: parameters["ButtonTitle"]!)
+    }
+    
+    func initializeRow(buttonTitle: String){
         self.buttonTitle=buttonTitle
-        
     }
 }

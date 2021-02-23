@@ -13,10 +13,22 @@ public class TableViewRowUserPhotoItem : TableViewRowNibItem {
     
     public var cell : TableUserPhotoViewCell? = nil
     public var isOptional : Bool = true
-    public required convenience init(isOptional : Bool ) {
+    
+//    public required convenience init(isOptional : Bool ) {
+//        self.init(nibName: "TableUserPhotoViewCell", reuseIdentifier: "tableUserPhotoViewCell", rowHeight: 110)
+//        cell?.isOptional = isOptional
+//        self.isOptional = isOptional
+//    }
+    
+    public required convenience init(parameters: [String: String]) {
         self.init(nibName: "TableUserPhotoViewCell", reuseIdentifier: "tableUserPhotoViewCell", rowHeight: 110)
+        initializeRow(isOptional : parameters["IsOptional"]!.boolValue)
+    }
+    
+    func initializeRow(isOptional : Bool){
         cell?.isOptional = isOptional
         self.isOptional = isOptional
     }
+    
 }
 

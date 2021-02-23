@@ -19,24 +19,27 @@ public class TableViewRowTextFieldItem : TableViewRowNibItem {
     var isReadonly : Bool = false
     
     
-   public  required convenience init( placeholderText: String, iconValue :  String, defaultValue : String = "", isReadonly: Bool = false) {
+    //    public required convenience init( placeholderText: String, iconValue :  String, defaultValue : String = "", isReadonly: Bool = false) {
+    //        self.init(nibName: "TableInputTextCell", reuseIdentifier: "tableInputTextCell")
+    //        initializeRow(placeholderText: placeholderText, iconValue: iconValue, type: .TextField, defaultValue: defaultValue, isReadonly: isReadonly)
+    //    }
+    
+    //    public  required convenience init( placeholderText: String, iconValue :  String, type: TableViewRowTextFieldItemType, defaultValue : String = "", isReadonly: Bool = false) {
+    //        self.init(nibName: "TableInputTextCell", reuseIdentifier: "tableInputTextCell")
+    //        initializeRow(placeholderText: placeholderText, iconValue: iconValue, type: type, defaultValue: defaultValue, isReadonly: isReadonly)
+    //    }
+    
+    public required convenience init(parameters: [String: String] ) {
         self.init(nibName: "TableInputTextCell", reuseIdentifier: "tableInputTextCell")
-        self.placeholderText=placeholderText
-        self.iconValue = iconValue
-        self.type = .TextField
-        self.defaultValue=defaultValue
-        self.isReadonly=isReadonly
+        initializeRow(placeholderText: parameters["PlaceholderText"]!, iconValue: parameters["IconValue"]!, type: TableViewRowTextFieldItemType.from(string: parameters["Type"] ?? "TextField")!, defaultValue: parameters["DefaultValue"] ?? "", isReadonly: (parameters["IsReadonly"] ?? "").boolValue)
     }
     
-    
-    
-   public  required convenience init( placeholderText: String, iconValue :  String, type: TableViewRowTextFieldItemType, defaultValue : String = "", isReadonly: Bool = false) {
-        self.init(nibName: "TableInputTextCell", reuseIdentifier: "tableInputTextCell")
+    func initializeRow(placeholderText: String, iconValue :  String, type: TableViewRowTextFieldItemType, defaultValue : String = "", isReadonly: Bool = false){
         self.placeholderText=placeholderText
         self.iconValue = iconValue
         self.type = type
         self.defaultValue=defaultValue
-        self.isReadonly=isReadonly        
+        self.isReadonly=isReadonly
     }
     
     public func setInputType()  {
@@ -126,6 +129,20 @@ public class TableViewRowTextFieldItem : TableViewRowNibItem {
                     return [ VALIDATION_INDICATOR_NO : "!" ]
                 }
             }
+        }
+    }
+}
+
+extension String {
+    var boolValue: Bool {
+        switch self.lowercased() {
+        case "true", "t", "yes", "y" , "1":
+            return true
+        case "false", "f", "no", "n", "", "0":
+            return false
+        default:
+           
+            return false
         }
     }
 }

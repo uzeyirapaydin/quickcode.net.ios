@@ -27,7 +27,7 @@ public class TableViewRowNibItem {
     }
 }
 
-public enum TableViewRowTextFieldItemType {
+public enum TableViewRowTextFieldItemType : CaseIterable{
     case TextField
     case TextFieldAmount
     case TextFieldInteger
@@ -41,6 +41,11 @@ public enum TableViewRowTextFieldItemType {
     case TextFieldCreditCard
     case TextFieldCreditCardCvc
     case TextFieldCreditCardDate
-
+    
+    static func from(string: String) -> Self? {
+        return self.allCases.first { string == "\($0)" }
+    }
+    
+    func toString() -> String { "\(self)" }
 
 }

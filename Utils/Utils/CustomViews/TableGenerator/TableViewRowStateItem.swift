@@ -14,7 +14,14 @@ public class TableViewRowStateItem : TableViewRowNibItem {
     
     public required convenience init() {
         self.init(nibName: "TableStateSelect", reuseIdentifier: "tableStateSelect")
-
+    }
+    
+    public required convenience init(parameters: [String: String]) {
+        self.init(nibName: "TableStateSelect", reuseIdentifier: "tableStateSelect")
+        initializeRow()
+    }
+    
+    func initializeRow() {
         
     }
 }

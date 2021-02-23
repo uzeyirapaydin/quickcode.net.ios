@@ -73,5 +73,315 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "boolValue"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "708">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "880">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "1044">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "1208">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "1372">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "1536">
+               </Location>
+               <Location
+                  uuid = "E3EDE165-3D5E-4BCE-9EC6-091418EE49D9 - febc671f27decd38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Utils):Swift.String.boolValue.getter : Swift.Bool"
+                  moduleName = "Utils"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uzeyirapaydin/Documents/Projects/QuickCode.Net.iOS/Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "1700">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44FB9F64-65A7-4A65-9C84-0D8BF8CF57C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "boolValue"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B833436C-6107-481E-9FD3-A15C6BB8276A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/Utils/CustomViews/TableGenerator/TableViewRowTextFieldItem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "boolValue"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8EB6166A-D087-45AD-AF97-13176587BB32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/Utils/CustomViews/TableGenerator/TableViewRowUserPhotoItem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "initializeRow(isOptional:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AAF0292-7673-4990-ABEF-AC6DA4EE7A22"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "quickcode.net/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "RegisterTableViewCells()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0F30E3F-D151-40B1-BD46-C1BB68C1262A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "quickcode.net/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "RegisterTableViewCells()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B68BD8E5-6DB9-4C59-8545-2D1AC415E17E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "quickcode.net/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "RegisterTableViewCells()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "01FF5C5F-B589-497D-97B5-8E99B9CF9649"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "quickcode.net/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "RegisterTableViewCells()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -10,5 +10,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "TableViewRowTextFieldItem.__allocating_init(parameters:):TableViewRowTextFieldItem.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parameters[&quot;Type&quot;]!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>
