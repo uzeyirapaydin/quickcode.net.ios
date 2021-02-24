@@ -19,20 +19,26 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>QuickCode.Net access to your bluetooth connection.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>QuickCode.Net access to your bluetooth connection.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>QuickCode.Net needs access to the camera to take photos.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>QuickCode.Net requires GPS to track cars and job orders</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>QuickCode.Net needs access to photos.</string>
 	<key>UIAppFonts</key>
 	<array>
-			<string>MYRIADPRO-COND.OTF</string>
-			<string>MYRIADPRO-BOLDCOND.OTF</string>
-			<string>FontAwesome.otf</string>
-			<string>Font Awesome 5 Free-Regular-400.otf</string>
-			<string>Font Awesome 5 Brands-Regular-400.otf</string>
+		<string>MYRIADPRO-COND.OTF</string>
+		<string>MYRIADPRO-BOLDCOND.OTF</string>
+		<string>FontAwesome.otf</string>
+		<string>Font Awesome 5 Free-Regular-400.otf</string>
+		<string>Font Awesome 5 Brands-Regular-400.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
