@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import SwiftMessages
+import QuickCodeNetClient
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -94,6 +95,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return view
         }
     }
+    
+//    func clearCustomerData(){
+//        let defaults = UserDefaults.standard
+//        defaults.removeObject(forKey: "CustomerData")
+//        self.customerData = CustomerData(customerId: -1, customerName: "",customerSurname: "",customerEmail: "",  firebaseId: "")
+//    }
+//    
+//
+//    
+//    func getCustomerData() -> CustomerData {
+//        
+//        let defaults = UserDefaults.standard
+//        
+//        if let customerDataString = defaults.value(forKey: "CustomerData") {
+//            
+//            let customerData =  try? JSONDecoder().decode(CustomerData.self, from: customerDataString as! Data)
+//            if customerData == nil {
+//               clearCustomerData()
+//                
+//                Installations.installations().delete(completion: { (error) in
+//                    print(error.debugDescription)
+//                })
+//  
+//                
+//                let storyboard = UIStoryboard(name: "Login", bundle: nil)
+//                let navigationController = storyboard.instantiateViewController(withIdentifier: "LoginNavigationController") as! UINavigationController
+//                
+//                navigationController.setViewControllers([storyboard.instantiateViewController(withIdentifier: "welcome")], animated: false)
+//                let window = UIApplication.shared.delegate!.window!!
+//                window.rootViewController = navigationController
+//                
+//                UIView.transition(with: window, duration: 1.0, options: [.transitionCrossDissolve], animations: nil, completion: nil)
+//            }
+//            else{
+//                self.customerData=customerData!
+//            }
+//            
+//            
+//            
+//            
+//            return self.customerData
+//        }
+//        
+//        return self.customerData;
+//    }
 
 }
 

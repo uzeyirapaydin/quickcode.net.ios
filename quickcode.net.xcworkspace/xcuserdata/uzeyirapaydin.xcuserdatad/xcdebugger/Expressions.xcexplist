@@ -18,5 +18,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "TableViewRowTextFieldItem.initializeRow(placeholderText:iconValue:type:defaultValue:isReadonly:):TableViewRowTextFieldItem.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " FontAwesome.init(rawValue: &quot;fa-user&quot;)!.unicode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

@@ -83,10 +83,10 @@
     </objects>
     <designables>
         <designable name="OSD-Sp-18r">
-            <size key="intrinsicContentSize" width="32" height="24"/>
+            <size key="intrinsicContentSize" width="32" height="35"/>
         </designable>
         <designable name="ceh-1F-B1C">
-            <size key="intrinsicContentSize" width="26" height="24"/>
+            <size key="intrinsicContentSize" width="30" height="35"/>
         </designable>
     </designables>
 </document>

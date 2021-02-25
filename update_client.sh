@@ -1,0 +1,1 @@
+docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli-v3 generate -i https://demo-api.quickcode.net/swagger/v1/swagger.json -l swift5 -o /local/QuickCodeNetClient 

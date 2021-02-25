@@ -51,21 +51,6 @@
 		2A0E421321DD6B4B0054C520 /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41DE21DD6B4B0054C520 /* QRCodeReaderViewController.swift */; };
 		2A0E421421DD6B4B0054C520 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41DF21DD6B4B0054C520 /* ToggleTorchButton.swift */; };
 		2A0E421521DD6B4B0054C520 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41E021DD6B4B0054C520 /* ReaderOverlayView.swift */; };
-		2A0E421621DD6B4B0054C520 /* LGSideMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0E41E221DD6B4B0054C520 /* LGSideMenuSegue.h */; };
-		2A0E421721DD6B4B0054C520 /* LGSideMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0E41E321DD6B4B0054C520 /* LGSideMenuView.h */; };
-		2A0E421821DD6B4B0054C520 /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0E41E421DD6B4B0054C520 /* LGSideMenuController.h */; };
-		2A0E421921DD6B4B0054C520 /* LGSideMenuGesturesHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0E41E521DD6B4B0054C520 /* LGSideMenuGesturesHandler.h */; };
-		2A0E421A21DD6B4B0054C520 /* LGSideMenuBorderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0E41E621DD6B4B0054C520 /* LGSideMenuBorderView.h */; };
-		2A0E421B21DD6B4B0054C520 /* Utils-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0E41E721DD6B4B0054C520 /* Utils-Bridging-Header.h */; };
-		2A0E421C21DD6B4B0054C520 /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41E821DD6B4B0054C520 /* LGSideMenuHelper.m */; };
-		2A0E421D21DD6B4B0054C520 /* UIViewController+LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0E41E921DD6B4B0054C520 /* UIViewController+LGSideMenuController.h */; };
-		2A0E421E21DD6B4B0054C520 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41EA21DD6B4B0054C520 /* LGSideMenuView.m */; };
-		2A0E421F21DD6B4B0054C520 /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41EB21DD6B4B0054C520 /* LGSideMenuSegue.m */; };
-		2A0E422021DD6B4B0054C520 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41EC21DD6B4B0054C520 /* LGSideMenuController.m */; };
-		2A0E422121DD6B4B0054C520 /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41ED21DD6B4B0054C520 /* LGSideMenuGesturesHandler.m */; };
-		2A0E422221DD6B4B0054C520 /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41EE21DD6B4B0054C520 /* UIViewController+LGSideMenuController.m */; };
-		2A0E422321DD6B4B0054C520 /* LGSideMenuHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0E41EF21DD6B4B0054C520 /* LGSideMenuHelper.h */; };
-		2A0E422421DD6B4B0054C520 /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E41F021DD6B4B0054C520 /* LGSideMenuBorderView.m */; };
 		2A0E422621DD6BB90054C520 /* ValidationErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E422521DD6BB90054C520 /* ValidationErrorType.swift */; };
 		2A0E426921DD6D410054C520 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E422921DD6D400054C520 /* Array+Extensions.swift */; };
 		2A0E426A21DD6D410054C520 /* UISegmentedControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E422A21DD6D400054C520 /* UISegmentedControl+Extensions.swift */; };
@@ -152,6 +137,8 @@
 		2A95E58F21DD97AC0021E83E /* TableTwoButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95E58B21DD97AC0021E83E /* TableTwoButtonViewCell.swift */; };
 		2A95E59021DD97AC0021E83E /* TableOneButtonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A95E58C21DD97AC0021E83E /* TableOneButtonViewCell.xib */; };
 		2A95E59221DD9D4F0021E83E /* TableViewOneButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95E59121DD9D4F0021E83E /* TableViewOneButtonItem.swift */; };
+		2AA7A89225E83FB800F13D70 /* TableViewRowMenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA7A88E25E83FB800F13D70 /* TableViewRowMenuHeader.xib */; };
+		2AA7A89425E83FB800F13D70 /* TableViewRowMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7A89025E83FB800F13D70 /* TableViewRowMenuHeader.swift */; };
 		2AB95B6A21E0106800EAE369 /* KMPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB95B6621E0106800EAE369 /* KMPopUp.swift */; };
 		2AB95B6B21E0106800EAE369 /* KMPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB95B6721E0106800EAE369 /* KMPopUpViewController.swift */; };
 		2AB95B6C21E0106800EAE369 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 2AB95B6921E0106800EAE369 /* .gitkeep */; };
@@ -210,21 +197,6 @@
 		2A0E41DE21DD6B4B0054C520 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
 		2A0E41DF21DD6B4B0054C520 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
 		2A0E41E021DD6B4B0054C520 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
-		2A0E41E221DD6B4B0054C520 /* LGSideMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuSegue.h; sourceTree = "<group>"; };
-		2A0E41E321DD6B4B0054C520 /* LGSideMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuView.h; sourceTree = "<group>"; };
-		2A0E41E421DD6B4B0054C520 /* LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuController.h; sourceTree = "<group>"; };
-		2A0E41E521DD6B4B0054C520 /* LGSideMenuGesturesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuGesturesHandler.h; sourceTree = "<group>"; };
-		2A0E41E621DD6B4B0054C520 /* LGSideMenuBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuBorderView.h; sourceTree = "<group>"; };
-		2A0E41E721DD6B4B0054C520 /* Utils-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Utils-Bridging-Header.h"; sourceTree = "<group>"; };
-		2A0E41E821DD6B4B0054C520 /* LGSideMenuHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuHelper.m; sourceTree = "<group>"; };
-		2A0E41E921DD6B4B0054C520 /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
-		2A0E41EA21DD6B4B0054C520 /* LGSideMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuView.m; sourceTree = "<group>"; };
-		2A0E41EB21DD6B4B0054C520 /* LGSideMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuSegue.m; sourceTree = "<group>"; };
-		2A0E41EC21DD6B4B0054C520 /* LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuController.m; sourceTree = "<group>"; };
-		2A0E41ED21DD6B4B0054C520 /* LGSideMenuGesturesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuGesturesHandler.m; sourceTree = "<group>"; };
-		2A0E41EE21DD6B4B0054C520 /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
-		2A0E41EF21DD6B4B0054C520 /* LGSideMenuHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuHelper.h; sourceTree = "<group>"; };
-		2A0E41F021DD6B4B0054C520 /* LGSideMenuBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuBorderView.m; sourceTree = "<group>"; };
 		2A0E422521DD6BB90054C520 /* ValidationErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrorType.swift; sourceTree = "<group>"; };
 		2A0E422921DD6D400054C520 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		2A0E422A21DD6D400054C520 /* UISegmentedControl+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extensions.swift"; sourceTree = "<group>"; };
@@ -307,6 +279,8 @@
 		2A95E58B21DD97AC0021E83E /* TableTwoButtonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableTwoButtonViewCell.swift; sourceTree = "<group>"; };
 		2A95E58C21DD97AC0021E83E /* TableOneButtonViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableOneButtonViewCell.xib; sourceTree = "<group>"; };
 		2A95E59121DD9D4F0021E83E /* TableViewOneButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewOneButtonItem.swift; sourceTree = "<group>"; };
+		2AA7A88E25E83FB800F13D70 /* TableViewRowMenuHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewRowMenuHeader.xib; sourceTree = "<group>"; };
+		2AA7A89025E83FB800F13D70 /* TableViewRowMenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewRowMenuHeader.swift; sourceTree = "<group>"; };
 		2AB95B6621E0106800EAE369 /* KMPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPopUp.swift; sourceTree = "<group>"; };
 		2AB95B6721E0106800EAE369 /* KMPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPopUpViewController.swift; sourceTree = "<group>"; };
 		2AB95B6921E0106800EAE369 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
@@ -340,6 +314,7 @@
 		2A0E412321DD67A00054C520 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				2AA7A88C25E83F8400F13D70 /* MenuCells */,
 				2A0E418421DD68990054C520 /* TableCells */,
 				2A0E417C21DD68990054C520 /* TableGenerator */,
 			);
@@ -405,7 +380,6 @@
 				2A0E41C321DD6B4B0054C520 /* Validator */,
 				2A0E41D321DD6B4B0054C520 /* TTSegmentedControl */,
 				2A0E41D621DD6B4B0054C520 /* QrCodeReader */,
-				2A0E41E121DD6B4B0054C520 /* LGSideMenuController */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -490,28 +464,6 @@
 				2A0E41E021DD6B4B0054C520 /* ReaderOverlayView.swift */,
 			);
 			path = QrCodeReader;
-			sourceTree = "<group>";
-		};
-		2A0E41E121DD6B4B0054C520 /* LGSideMenuController */ = {
-			isa = PBXGroup;
-			children = (
-				2A0E41E221DD6B4B0054C520 /* LGSideMenuSegue.h */,
-				2A0E41E321DD6B4B0054C520 /* LGSideMenuView.h */,
-				2A0E41E421DD6B4B0054C520 /* LGSideMenuController.h */,
-				2A0E41E521DD6B4B0054C520 /* LGSideMenuGesturesHandler.h */,
-				2A0E41E621DD6B4B0054C520 /* LGSideMenuBorderView.h */,
-				2A0E41E721DD6B4B0054C520 /* Utils-Bridging-Header.h */,
-				2A0E41E821DD6B4B0054C520 /* LGSideMenuHelper.m */,
-				2A0E41E921DD6B4B0054C520 /* UIViewController+LGSideMenuController.h */,
-				2A0E41EA21DD6B4B0054C520 /* LGSideMenuView.m */,
-				2A0E41EB21DD6B4B0054C520 /* LGSideMenuSegue.m */,
-				2A0E41EC21DD6B4B0054C520 /* LGSideMenuController.m */,
-				2A0E41ED21DD6B4B0054C520 /* LGSideMenuGesturesHandler.m */,
-				2A0E41EE21DD6B4B0054C520 /* UIViewController+LGSideMenuController.m */,
-				2A0E41EF21DD6B4B0054C520 /* LGSideMenuHelper.h */,
-				2A0E41F021DD6B4B0054C520 /* LGSideMenuBorderView.m */,
-			);
-			path = LGSideMenuController;
 			sourceTree = "<group>";
 		};
 		2A0E422721DD6D400054C520 /* AlertPickers */ = {
@@ -778,6 +730,15 @@
 			path = Fonts;
 			sourceTree = SOURCE_ROOT;
 		};
+		2AA7A88C25E83F8400F13D70 /* MenuCells */ = {
+			isa = PBXGroup;
+			children = (
+				2AA7A89025E83FB800F13D70 /* TableViewRowMenuHeader.swift */,
+				2AA7A88E25E83FB800F13D70 /* TableViewRowMenuHeader.xib */,
+			);
+			path = MenuCells;
+			sourceTree = "<group>";
+		};
 		2AB95B6421E0106800EAE369 /* KMPopUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -828,16 +789,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A0E421A21DD6B4B0054C520 /* LGSideMenuBorderView.h in Headers */,
-				2A0E421921DD6B4B0054C520 /* LGSideMenuGesturesHandler.h in Headers */,
 				2A7BE8B821DD633F002F06BF /* Utils.h in Headers */,
-				2A0E422321DD6B4B0054C520 /* LGSideMenuHelper.h in Headers */,
-				2A0E421821DD6B4B0054C520 /* LGSideMenuController.h in Headers */,
-				2A0E421621DD6B4B0054C520 /* LGSideMenuSegue.h in Headers */,
-				2A0E421B21DD6B4B0054C520 /* Utils-Bridging-Header.h in Headers */,
-				2A0E421721DD6B4B0054C520 /* LGSideMenuView.h in Headers */,
 				2A0E420A21DD6B4B0054C520 /* TTSegmentedControl.h in Headers */,
-				2A0E421D21DD6B4B0054C520 /* UIViewController+LGSideMenuController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,6 +859,7 @@
 				2A5842B9221EABE800321E36 /* TableCheckBoxViewCell.xib in Resources */,
 				2A9434A425E45CBF0074BCE2 /* Font Awesome 5 Brands-Regular-400.otf in Resources */,
 				2A9434A525E45CBF0074BCE2 /* Font Awesome 5 Free-Regular-400.otf in Resources */,
+				2AA7A89225E83FB800F13D70 /* TableViewRowMenuHeader.xib in Resources */,
 				2A95E58421DD8DA00021E83E /* TableButtonViewCell.xib in Resources */,
 				2A9434A725E45CBF0074BCE2 /* MYRIADPRO-COND.OTF in Resources */,
 				2A9434A625E45CBF0074BCE2 /* MYRIADPRO-BOLDCOND.OTF in Resources */,
@@ -955,7 +909,6 @@
 				2A0E429121DD6D410054C520 /* Label.swift in Sources */,
 				2A95E57821DD720A0021E83E /* CaseValidationPattern.swift in Sources */,
 				2A0E427721DD6D410054C520 /* Common+Extensions.swift in Sources */,
-				2A0E422121DD6B4B0054C520 /* LGSideMenuGesturesHandler.m in Sources */,
 				2A0E426C21DD6D410054C520 /* UIViewController+Extensions.swift in Sources */,
 				2A0E41FB21DD6B4B0054C520 /* LSAnimationUtils.swift in Sources */,
 				2A0E428621DD6D410054C520 /* PhotoLibraryPickerViewController.swift in Sources */,
@@ -994,7 +947,6 @@
 				2A0E427321DD6D410054C520 /* UISearchBar+Extensions.swift in Sources */,
 				2A0E410B21DD63D60054C520 /* DeviceModelExtension.swift in Sources */,
 				2A5842B8221EABE800321E36 /* TableCheckBoxViewCell.swift in Sources */,
-				2A0E421C21DD6B4B0054C520 /* LGSideMenuHelper.m in Sources */,
 				2A0E428421DD6D410054C520 /* OneTextFieldViewController.swift in Sources */,
 				2A0E420B21DD6B4B0054C520 /* TTSegmentedControl.swift in Sources */,
 				2AB95B6A21E0106800EAE369 /* KMPopUp.swift in Sources */,
@@ -1009,14 +961,12 @@
 				2A0E420821DD6B4B0054C520 /* ValidationRuleCondition.swift in Sources */,
 				2A0E427921DD6D410054C520 /* UITextField+Extensions.swift in Sources */,
 				2A0E420321DD6B4B0054C520 /* ValidationRulePattern.swift in Sources */,
-				2A0E422221DD6B4B0054C520 /* UIViewController+LGSideMenuController.m in Sources */,
 				2A0E419D21DD68990054C520 /* TableHeaderViewCell.swift in Sources */,
 				2A0E420621DD6B4B0054C520 /* ValidationRuleEquality.swift in Sources */,
 				2A95E58D21DD97AC0021E83E /* TableOneButtonViewCell.swift in Sources */,
 				2A0E428221DD6D410054C520 /* CountryCell.swift in Sources */,
 				2A0E420E21DD6B4B0054C520 /* QRCodeReaderViewContainer.swift in Sources */,
 				2A0E428A21DD6D410054C520 /* Location.swift in Sources */,
-				2A0E421F21DD6B4B0054C520 /* LGSideMenuSegue.m in Sources */,
 				2A0E41B321DD6AAF0054C520 /* RoundedButton.swift in Sources */,
 				2A0E420421DD6B4B0054C520 /* ValidationRuleComparison.swift in Sources */,
 				2A6E94D52294499A00B7F4EE /* Vibration.swift in Sources */,
@@ -1034,6 +984,7 @@
 				2A0E41FC21DD6B4B0054C520 /* LSDialogBackgroundView.swift in Sources */,
 				2A0E427B21DD6D410054C520 /* TextViewController.swift in Sources */,
 				2A0E421321DD6B4B0054C520 /* QRCodeReaderViewController.swift in Sources */,
+				2AA7A89425E83FB800F13D70 /* TableViewRowMenuHeader.swift in Sources */,
 				2A0E420921DD6B4B0054C520 /* ValidationRuleLength.swift in Sources */,
 				2A0E426B21DD6D410054C520 /* UIImageView+Extensions.swift in Sources */,
 				2A0E419521DD68990054C520 /* TableViewRowImageItem.swift in Sources */,
@@ -1053,13 +1004,11 @@
 				2A72ACCB229C1D9600320E2D /* TableStateSelect.swift in Sources */,
 				2A43C99D24B69DE200DB806B /* NVActivityIndicatorPresenter.swift in Sources */,
 				2A0E41FE21DD6B4B0054C520 /* ValidatableInterfaceElement.swift in Sources */,
-				2A0E421E21DD6B4B0054C520 /* LGSideMenuView.m in Sources */,
 				2A95E57321DD720A0021E83E /* ValidationRuleSet.swift in Sources */,
 				2A0E428E21DD6D410054C520 /* DatePickerViewController.swift in Sources */,
 				2A0E41FA21DD6B4B0054C520 /* UIViewController+LSDialogViewController.swift in Sources */,
 				2A95E57221DD720A0021E83E /* ValidationPattern.swift in Sources */,
 				2A0E420021DD6B4B0054C520 /* UISlider+Validator.swift in Sources */,
-				2A0E422421DD6B4B0054C520 /* LGSideMenuBorderView.m in Sources */,
 				2A0E419721DD68990054C520 /* TableViewRowUserPhotoItem.swift in Sources */,
 				2A0E426A21DD6D410054C520 /* UISegmentedControl+Extensions.swift in Sources */,
 				2A0E419921DD68990054C520 /* TableViewTwoButtonItem.swift in Sources */,
@@ -1067,7 +1016,6 @@
 				2A0E427821DD6D410054C520 /* Locale+Extensions.swift in Sources */,
 				2A0E428721DD6D410054C520 /* LocationSearchResultsViewController.swift in Sources */,
 				2A0E428921DD6D410054C520 /* SearchHistoryManager.swift in Sources */,
-				2A0E422021DD6B4B0054C520 /* LGSideMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

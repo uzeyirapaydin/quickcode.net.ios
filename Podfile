@@ -4,6 +4,8 @@ workspace 'quickcode.net'
 
 target 'quickcode.net' do
     use_frameworks!
+    pod 'QuickCodeNetClient',  :path => './QuickCodeNetClient'
+    pod 'LGSideMenuController'
     pod 'SwiftMessages'
     pod 'MaterialTextField'
     pod 'SwiftLocation'
@@ -24,6 +26,7 @@ end
 
 target 'Utils' do
     project 'Utils/Utils.xcodeproj'
+    pod 'QuickCodeNetClient',  :path => './QuickCodeNetClient'
     pod 'SwiftyButton'
     pod 'ALCameraViewController'
     pod 'LRTextField'

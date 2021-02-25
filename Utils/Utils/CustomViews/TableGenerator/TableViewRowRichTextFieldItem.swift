@@ -9,6 +9,7 @@
 import UIKit
 import LRTextField
 import CoreTelephony
+import FontAwesome_swift
 
 public class TableViewRowRichTextFieldItem : TableViewRowNibItem {
 
@@ -34,8 +35,14 @@ public class TableViewRowRichTextFieldItem : TableViewRowNibItem {
     }
     
     func initializeRow(placeholderText: String, iconValue :  String, defaultValue : String = "", isReadonly: Bool = false){
+        
+        var fontAwesomeIconName = iconValue
+        if !fontAwesomeIconName.starts(with: "fa-") {
+            fontAwesomeIconName = "fa-user"
+        }
+
+        self.iconValue =  FontAwesome.init(rawValue: fontAwesomeIconName)!.unicode
         self.placeholderText=placeholderText
-        self.iconValue = iconValue
         self.defaultValue=defaultValue
         self.isReadonly=isReadonly
         self.rowHeight=120
