@@ -13,15 +13,24 @@ public struct GcolumnTypes: Codable {
 
     public var _id: Int?
     public var typeName: String?
+    public var iosComponentName: String?
+    public var iosType: String?
+    public var iconCode: String?
 
-    public init(_id: Int? = nil, typeName: String? = nil) {
+    public init(_id: Int? = nil, typeName: String? = nil, iosComponentName: String? = nil, iosType: String? = nil, iconCode: String? = nil) {
         self._id = _id
         self.typeName = typeName
+        self.iosComponentName = iosComponentName
+        self.iosType = iosType
+        self.iconCode = iconCode
     }
 
     public enum CodingKeys: String, CodingKey { 
         case _id = "id"
         case typeName
+        case iosComponentName
+        case iosType
+        case iconCode
     }
 
 }

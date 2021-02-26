@@ -16,18 +16,24 @@ class FormViewController: UITableViewController , NVActivityIndicatorViewable{
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
+        let size = CGSize(width: 60, height: 60)
+        startAnimating(size, message: "Please wait...", type: NVActivityIndicatorType.ballClipRotatePulse, fadeInAnimation: nil)
         tableViewDataSource =  TableViewRowGenerator(tableView: self.inputTableView)
         inputTableView.isUserInteractionEnabled=true
         RegisterTableViewCells()
+        definesPresentationContext = true
         //SwaggerClientAPI.basePath
 
     }
-
+    public var tableName : String?  = nil
     @IBOutlet weak var inputTableView: UITableView!
     var tableViewDataSource : TableViewRowGenerator? = nil
     func RegisterTableViewCells(){
         var generatedTableViewRowData = [(key : String? , value : [ String : [String:String]]?)]()
-        FormGeneratorAPI.formGeneratorGetColumns(tableName: "") { [self] (response, error) in
+        FormGeneratorAPI.formGeneratorGetTables { (response, error) in
+
+        }
+        FormGeneratorAPI.formGeneratorGetColumns(tableName: self.tableName) { [self] (response, error) in
             for (index,item) in response!.enumerated() {
                 generatedTableViewRowData.append((key: item.key, value: item.value))
             }
@@ -73,10 +79,12 @@ class FormViewController: UITableViewController , NVActivityIndicatorViewable{
                         tableViewDataSource?.addNewRow(key: rowKey!, value: newRowItem!)
                     }
                     
-                    self.inputTableView.reloadData()
+                   
                     
                 }
             }
+            self.stopAnimating()
+            self.inputTableView.reloadData()
         }
         
  
@@ -198,8 +206,7 @@ class FormViewController: UITableViewController , NVActivityIndicatorViewable{
     }
     
     @objc func buttonNoAction(sender: UIButton!) {
-//        let v  = self.storyboard?.instantiateViewController(withIdentifier: "welcome") as! WelcomeViewController
-//        self.navigationController?.pushViewController(v, animated: true)
+        navigationController?.popViewController(animated: true)
     }
         
     

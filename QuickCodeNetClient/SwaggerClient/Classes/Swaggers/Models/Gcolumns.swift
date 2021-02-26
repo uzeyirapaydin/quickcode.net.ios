@@ -19,8 +19,11 @@ public struct Gcolumns: Codable {
     public var isPrimaryKey: Bool?
     public var isNullable: Bool?
     public var defaultValue: String?
+    public var labelText: String?
+    public var validationMessage: String?
+    public var placeholderText: String?
 
-    public init(_id: Int? = nil, tableId: Int? = nil, columnName: String? = nil, columnTypeId: Int? = nil, isIdentity: Bool? = nil, isPrimaryKey: Bool? = nil, isNullable: Bool? = nil, defaultValue: String? = nil) {
+    public init(_id: Int? = nil, tableId: Int? = nil, columnName: String? = nil, columnTypeId: Int? = nil, isIdentity: Bool? = nil, isPrimaryKey: Bool? = nil, isNullable: Bool? = nil, defaultValue: String? = nil, labelText: String? = nil, validationMessage: String? = nil, placeholderText: String? = nil) {
         self._id = _id
         self.tableId = tableId
         self.columnName = columnName
@@ -29,6 +32,9 @@ public struct Gcolumns: Codable {
         self.isPrimaryKey = isPrimaryKey
         self.isNullable = isNullable
         self.defaultValue = defaultValue
+        self.labelText = labelText
+        self.validationMessage = validationMessage
+        self.placeholderText = placeholderText
     }
 
     public enum CodingKeys: String, CodingKey { 
@@ -40,6 +46,9 @@ public struct Gcolumns: Codable {
         case isPrimaryKey
         case isNullable
         case defaultValue
+        case labelText
+        case validationMessage
+        case placeholderText
     }
 
 }

@@ -88,7 +88,47 @@ class LoginViewController: UIViewController,UITextFieldDelegate,NVActivityIndica
         startAnimating(size, message: "Please wait...", type: NVActivityIndicatorType.ballClipRotatePulse, fadeInAnimation: nil)
         //appDelegate.clearCustomerData()
         let group = DispatchGroup()
-        
+        var portalLoginRequest : PortalLoginRequest = PortalLoginRequest(username: txtEmail.text, password: txtPassword.text)
+        PortalAPI.portalLogin(body: portalLoginRequest) { (response, error) in
+            self.stopAnimating()
+            if response?.code == 0 {
+                self.appDelegate.showInfoMessage(title: "Login Success", message: "Login Success")
+      
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
+                vc.modalPresentationStyle = .fullScreen
+                        vc.modalTransitionStyle = .crossDissolve
+
+                UIApplication.topViewController()?.present(vc, animated: true, completion: nil)
+                
+
+      
+               
+            }else{
+                
+                self.txtEmail.shake(10,              // 10 times
+                                    withDelta: 5.0,  // 5 points wide
+                                    speed: 0.08,     // 30ms per shake
+                                    shakeDirection: ShakeDirection.horizontal
+                )
+                
+                self.appDelegate.showInfoMessage(title: "Login Error", message: "Please check email and password.")
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(80), execute: {
+                    self.txtPassword.shake(10,              // 10 times
+                                           withDelta: 5.0,  // 5 points wide
+                                           speed: 0.08,     // 30ms per shake
+                                           shakeDirection: ShakeDirection.horizontal
+                    ){
+                        
+                        
+                    }
+                })
+                
+                
+            }
+           
+        }
 //        let customerLoginRequest :  CustomerLoginRequest = CustomerLoginRequest(email: txtEmail.text, password: txtPassword.text, result: nil )
 //        CallStoredProceduresAPI.callStoredProceduresCallCustomerLogin(request: customerLoginRequest) { (response, error) in
 //            

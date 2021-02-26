@@ -73,16 +73,26 @@ public class TableImageViewCell: UITableViewCell {
     }
     
     @objc func btnAddImage(_ sender: Any) {
-        if addImage {
-            openCamera(sender)
-        }else{
-            let image = UIImage(named: imageName)
-            addDriverLicenseImage(image: image!)
-            addImage=true
-            lblAddImage.text=""
-            imageDriverLicense.alpha=0.5
-            lblAddImage.textColor = UIColor.black
-        }
+            if addImage {
+                openCamera(sender)
+            }else{
+                let image = UIImage(named: imageName)
+                addDriverLicenseImage(image: image!)
+                addImage=true
+                lblAddImage.text=""
+                imageDriverLicense.alpha=0.5
+                
+                if #available(iOS 12.0, *) {
+                    if self.traitCollection.userInterfaceStyle == .dark {
+                        lblAddImage.textColor = UIColor.white
+                    } else {
+                        lblAddImage.textColor = UIColor.black
+                    }
+                } else {
+                    lblAddImage.textColor = UIColor.black
+                }
+                
+            }
     }
     
     @objc func openCamera(_ sender: Any) {
@@ -112,7 +122,7 @@ public class TableImageViewCell: UITableViewCell {
         }
         
         
-        self.window?.rootViewController?.present(cameraViewController, animated: true, completion: nil)
+        UIApplication.topViewController()?.present(cameraViewController, animated: true, completion: nil)
     }
     
     @objc func openLibrary(_ sender: Any) {
@@ -132,6 +142,6 @@ public class TableImageViewCell: UITableViewCell {
             self?.libraryViewController.dismiss(animated: true, completion: nil)
         }
         
-        self.window?.rootViewController?.present(libraryViewController, animated: true, completion: nil)
+        UIApplication.topViewController()?.present(libraryViewController, animated: true, completion: nil)
     }
 }

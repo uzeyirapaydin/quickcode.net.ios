@@ -141,10 +141,16 @@ open class GcolumnTypesAPI {
   "code" : 0,
   "message" : "message",
   "value" : [ {
+    "iosComponentName" : "iosComponentName",
+    "iosType" : "iosType",
     "typeName" : "typeName",
+    "iconCode" : "iconCode",
     "id" : 6
   }, {
+    "iosComponentName" : "iosComponentName",
+    "iosType" : "iosType",
     "typeName" : "typeName",
+    "iconCode" : "iconCode",
     "id" : 6
   } ]
 }}]

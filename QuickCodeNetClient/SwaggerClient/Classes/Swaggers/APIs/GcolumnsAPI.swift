@@ -143,19 +143,25 @@ open class GcolumnsAPI {
   "value" : [ {
     "defaultValue" : "defaultValue",
     "isNullable" : true,
+    "labelText" : "labelText",
+    "validationMessage" : "validationMessage",
     "isIdentity" : true,
     "tableId" : 1,
     "columnTypeId" : 5,
     "isPrimaryKey" : true,
+    "placeholderText" : "placeholderText",
     "id" : 6,
     "columnName" : "columnName"
   }, {
     "defaultValue" : "defaultValue",
     "isNullable" : true,
+    "labelText" : "labelText",
+    "validationMessage" : "validationMessage",
     "isIdentity" : true,
     "tableId" : 1,
     "columnTypeId" : 5,
     "isPrimaryKey" : true,
+    "placeholderText" : "placeholderText",
     "id" : 6,
     "columnName" : "columnName"
   } ]

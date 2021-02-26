@@ -59,4 +59,44 @@ open class FormGeneratorAPI {
 
         return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
     }
+    /**
+
+     - parameter completion: completion handler to receive the data and the error objects
+     */
+    open class func formGeneratorGetTables(completion: @escaping ((_ data: [Gtables]?,_ error: Error?) -> Void)) {
+        formGeneratorGetTablesWithRequestBuilder().execute { (response, error) -> Void in
+            completion(response?.body, error)
+        }
+    }
+
+
+    /**
+     - GET /api/FormGenerator/GetTables
+     - 
+
+     - examples: [{contentType=application/json, example=[ {
+  "headerInfoText" : "headerInfoText",
+  "headerText" : "headerText",
+  "id" : 0,
+  "tableName" : "tableName"
+}, {
+  "headerInfoText" : "headerInfoText",
+  "headerText" : "headerText",
+  "id" : 0,
+  "tableName" : "tableName"
+} ]}]
+
+     - returns: RequestBuilder<[Gtables]> 
+     */
+    open class func formGeneratorGetTablesWithRequestBuilder() -> RequestBuilder<[Gtables]> {
+        let path = "/api/FormGenerator/GetTables"
+        let URLString = SwaggerClientAPI.basePath + path
+        let parameters: [String:Any]? = nil
+        let url = URLComponents(string: URLString)
+
+
+        let requestBuilder: RequestBuilder<[Gtables]>.Type = SwaggerClientAPI.requestBuilderFactory.getBuilder()
+
+        return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
+    }
 }

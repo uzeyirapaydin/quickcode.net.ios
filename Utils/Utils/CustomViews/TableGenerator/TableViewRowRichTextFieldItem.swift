@@ -31,7 +31,7 @@ public class TableViewRowRichTextFieldItem : TableViewRowNibItem {
     
     public required convenience init(parameters: [String: String] ) {
         self.init(nibName: "TableInputRichTextCell", reuseIdentifier: "tableInputRichTextCell")
-        initializeRow(placeholderText: parameters["PlaceholderText"]!, iconValue: parameters["IconValue"]!, defaultValue: parameters["DefaultValue"]!, isReadonly: (parameters["IsReadonly"] ?? "").boolValue)
+        initializeRow(placeholderText: parameters["PlaceholderText"]!, iconValue: parameters["IconValue"]!, defaultValue: (parameters["DefaultValue"] ?? ""), isReadonly: (parameters["IsReadonly"] ?? "").boolValue)
     }
     
     func initializeRow(placeholderText: String, iconValue :  String, defaultValue : String = "", isReadonly: Bool = false){

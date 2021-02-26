@@ -1,25 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jWl-rD-5xN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="y1h-TC-HZP">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="jWl-rD-5xN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="INk-ue-mSo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="hqU-xh-xRs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QuickCodeNetLogo" highlightedImage="QuickCodeNetLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xj3-sI-wTg">
+                                <rect key="frame" x="105.5" y="364.5" width="203" height="168"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bCL-e9-fse"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hqU-xh-xRs" firstAttribute="top" secondItem="INk-ue-mSo" secondAttribute="top" id="8Fx-g5-eiX"/>
+                            <constraint firstAttribute="bottom" secondItem="hqU-xh-xRs" secondAttribute="bottom" id="Mqu-pV-5We"/>
+                            <constraint firstItem="xj3-sI-wTg" firstAttribute="centerX" secondItem="bCL-e9-fse" secondAttribute="centerX" id="N9O-sI-P6Q"/>
+                            <constraint firstItem="hqU-xh-xRs" firstAttribute="leading" secondItem="bCL-e9-fse" secondAttribute="leading" id="OLa-gV-76F"/>
+                            <constraint firstItem="xj3-sI-wTg" firstAttribute="centerY" secondItem="bCL-e9-fse" secondAttribute="centerY" constant="-4.5" id="kZ0-Mv-De1"/>
+                            <constraint firstItem="hqU-xh-xRs" firstAttribute="trailing" secondItem="bCL-e9-fse" secondAttribute="trailing" id="qZs-92-cRS"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXl-CD-lZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="540" height="960"/>
+        <image name="QuickCodeNetLogo" width="203" height="168.5"/>
+    </resources>
 </document>

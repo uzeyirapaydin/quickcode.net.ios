@@ -141,10 +141,14 @@ open class GtablesAPI {
   "code" : 0,
   "message" : "message",
   "value" : [ {
-    "id" : 6,
+    "headerInfoText" : "headerInfoText",
+    "headerText" : "headerText",
+    "id" : 0,
     "tableName" : "tableName"
   }, {
-    "id" : 6,
+    "headerInfoText" : "headerInfoText",
+    "headerText" : "headerText",
+    "id" : 0,
     "tableName" : "tableName"
   } ]
 }}]

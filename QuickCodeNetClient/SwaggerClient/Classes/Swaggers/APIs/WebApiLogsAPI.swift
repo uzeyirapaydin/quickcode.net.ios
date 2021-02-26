@@ -152,11 +152,11 @@ open class WebApiLogsAPI {
     "firebaseId" : "firebaseId",
     "clientIp" : "clientIp",
     "controllerName" : "controllerName",
-    "logId" : 6,
+    "logId" : 1,
     "requestData" : "requestData",
     "actionName" : "actionName",
     "httpStatusCode" : "httpStatusCode",
-    "elapsedTime" : 1,
+    "elapsedTime" : 6,
     "logDatetime" : "2000-01-23T04:56:07.000+00:00"
   }, {
     "hostName" : "hostName",
@@ -170,11 +170,11 @@ open class WebApiLogsAPI {
     "firebaseId" : "firebaseId",
     "clientIp" : "clientIp",
     "controllerName" : "controllerName",
-    "logId" : 6,
+    "logId" : 1,
     "requestData" : "requestData",
     "actionName" : "actionName",
     "httpStatusCode" : "httpStatusCode",
-    "elapsedTime" : 1,
+    "elapsedTime" : 6,
     "logDatetime" : "2000-01-23T04:56:07.000+00:00"
   } ]
 }}]

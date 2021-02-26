@@ -3,10 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "TableUserPhotoViewCell.tapImageFunction(sender:):TableUserPhotoViewCell.swift">
+         contextName = "TableViewRowTextFieldItem.initializeRow(placeholderText:iconValue:type:defaultValue:isReadonly:):TableViewRowTextFieldItem.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.parentViewController?.parent">
+               value = " FontAwesome.init(rawValue: &quot;fa-user&quot;)!.unicode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TableViewRowRichTextFieldItem.__allocating_init(parameters:):TableViewRowRichTextFieldItem.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parameters[&quot;DefaultValue&quot;]!">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -19,10 +27,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "TableViewRowTextFieldItem.initializeRow(placeholderText:iconValue:type:defaultValue:isReadonly:):TableViewRowTextFieldItem.swift">
+         contextName = "TableViewController.tableView(_:numberOfRowsInSection:):TableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoginViewController.btn_Login(_:):LoginViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = " FontAwesome.init(rawValue: &quot;fa-user&quot;)!.unicode">
+               value = "UIApplication.shared.delegate?.window">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TableUserPhotoViewCell.tapImageFunction(sender:):TableUserPhotoViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.parentViewController?.parent">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

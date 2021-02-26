@@ -11,7 +11,6 @@ import Foundation
 
 public struct WebApiLogs: Codable {
 
-    public var logId: Int?
     public var hostIp: String?
     public var hostName: String?
     public var clientIp: String?
@@ -28,9 +27,9 @@ public struct WebApiLogs: Codable {
     public var deviceVersion: String?
     public var firebaseId: String?
     public var versionCode: String?
+    public var logId: Int?
 
-    public init(logId: Int? = nil, hostIp: String? = nil, hostName: String? = nil, clientIp: String? = nil, controllerName: String? = nil, actionName: String? = nil, requestData: String? = nil, responseData: String? = nil, httpStatusCode: String? = nil, elapsedTime: Int64? = nil, requestDatetime: String? = nil, logDatetime: Date? = nil, deviceId: String? = nil, deviceOs: String? = nil, deviceVersion: String? = nil, firebaseId: String? = nil, versionCode: String? = nil) {
-        self.logId = logId
+    public init(hostIp: String? = nil, hostName: String? = nil, clientIp: String? = nil, controllerName: String? = nil, actionName: String? = nil, requestData: String? = nil, responseData: String? = nil, httpStatusCode: String? = nil, elapsedTime: Int64? = nil, requestDatetime: String? = nil, logDatetime: Date? = nil, deviceId: String? = nil, deviceOs: String? = nil, deviceVersion: String? = nil, firebaseId: String? = nil, versionCode: String? = nil, logId: Int? = nil) {
         self.hostIp = hostIp
         self.hostName = hostName
         self.clientIp = clientIp
@@ -47,6 +46,7 @@ public struct WebApiLogs: Codable {
         self.deviceVersion = deviceVersion
         self.firebaseId = firebaseId
         self.versionCode = versionCode
+        self.logId = logId
     }
 
 

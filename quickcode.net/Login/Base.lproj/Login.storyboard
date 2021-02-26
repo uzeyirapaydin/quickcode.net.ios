@@ -37,18 +37,20 @@
                                 <rect key="frame" x="85" y="144" width="205" height="212"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld8-PC-5ke">
-                                <rect key="frame" x="0.0" y="366" width="375" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <rect key="frame" x="0.0" y="366" width="375" height="42.666666666666686"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="CoQ-Bp-FP2">
-                                <rect key="frame" x="0.0" y="412" width="375" height="26.333333333333314"/>
-                                <string key="text">Lorem Ipsum is simply dummy text of the printing
-and typesetting industry. Lorem </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The easiest way to create a project." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="CoQ-Bp-FP2">
+                                <rect key="frame" x="0.0" y="413.66666666666669" width="375" height="19.666666666666686"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URN-je-2hj" customClass="RoundedButton" customModule="Utils">
                                 <rect key="frame" x="63.666666666666671" y="586.33333333333337" width="247.66666666666663" height="53"/>
@@ -68,7 +70,7 @@ and typesetting industry. Lorem </string>
                                 <rect key="frame" x="63.666666666666671" y="654.33333333333337" width="247.66666666666663" height="53"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="SIGN UP">
+                                <state key="normal" title="CREATE PROJECT">
                                     <color key="titleColor" red="0.96862745098039216" green="0.60392156862745094" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -139,7 +141,7 @@ and typesetting industry. Lorem </string>
                                     <action selector="btnBack_click:" destination="iVe-j9-huh" eventType="touchUpInside" id="Zcy-vx-d3h"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="t43-rz-b2q" customClass="MFTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UZEYIRA" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="t43-rz-b2q" customClass="MFTextField">
                                 <rect key="frame" x="63.666666666666671" y="524.33333333333337" width="247.66666666666663" height="40"/>
                                 <color key="tintColor" red="0.1715652701" green="1" blue="0.95115763440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -163,7 +165,7 @@ and typesetting industry. Lorem </string>
                                     <outlet property="delegate" destination="iVe-j9-huh" id="I61-FW-WNv"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dED-z8-DJK" customClass="MFTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dED-z8-DJK" customClass="MFTextField">
                                 <rect key="frame" x="63.666666666666671" y="584.33333333333337" width="247.66666666666663" height="40"/>
                                 <color key="tintColor" red="0.1095836697" green="1" blue="0.9936235403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.99890630420000004" green="0.97442023479999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -200,16 +202,20 @@ and typesetting industry. Lorem </string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKN-Sh-Vmq">
-                                <rect key="frame" x="147" y="366" width="81" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <rect key="frame" x="138.33333333333334" y="366" width="98.666666666666657" height="41.666666666666686"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter email and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="UP2-GL-dsc">
-                                <rect key="frame" x="10" y="412" width="355" height="13.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter username and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="UP2-GL-dsc">
+                                <rect key="frame" x="10" y="412.66666666666669" width="355" height="18.666666666666686"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoY-Nw-gYI">
                                 <rect key="frame" x="63.666666666666671" y="715.33333333333337" width="247.66666666666663" height="30"/>
@@ -277,13 +283,13 @@ and typesetting industry. Lorem </string>
             <size key="intrinsicContentSize" width="47" height="30"/>
         </designable>
         <designable name="Vhi-xw-XdT">
-            <size key="intrinsicContentSize" width="62" height="30"/>
+            <size key="intrinsicContentSize" width="133" height="30"/>
         </designable>
         <designable name="dED-z8-DJK">
-            <size key="intrinsicContentSize" width="75.333333333333329" height="35.805"/>
+            <size key="intrinsicContentSize" width="75.333333333333329" height="20"/>
         </designable>
         <designable name="t43-rz-b2q">
-            <size key="intrinsicContentSize" width="48.333333333333336" height="35.805"/>
+            <size key="intrinsicContentSize" width="78.333333333333329" height="21.666666666666668"/>
         </designable>
     </designables>
     <resources>
